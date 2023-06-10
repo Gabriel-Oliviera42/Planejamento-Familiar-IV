@@ -1,76 +1,101 @@
 * {
-  padding: 0px;
-  margin: 0px;
-}
-
-a {
-  text-decoration: none;
-}
-  
-li {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  text-decoration: none;
 }
 
 header {
-    width: 100%;
-    height: 64px;
-    background: rgb(142, 142, 142);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0px;
-    padding: 0 80px;
-    z-index: 3;
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0px;
 }
 
-.logo {
-    background-color: aqua;
+h1 {
+  margin: 0;
 }
 
-.header_nav > ul{
-    display: flex;
-    justify-content: space-around;
-    gap: 32px;
-    background-color: #6386DB;
+p {
+  font-size: 24px;
+}
+
+nav.principal li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+body {
+  height: 100%;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 4px;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown-content a {
-    color: #000;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition: background-color 0.3s ease;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-
-main {
-    width: 100%;
-    height: 10000px;
-    background-color: #DB3776;  
-
-    display: flex;
-    flex-direction: column;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px;
 }
 
-.man_section {
-    display: flex;
-    background-color: #F24EEA;
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.part1 {
+  display: flex;
+  align-items: center;
+}
+
+.slide_bar {
+  position: fixed;
+  top: 98px;
+  left: 0px;
+  padding: 10px;
+  background-color: #555;
+  height: 100%;
+  width: 64px;
+}
+
+text {
+  
 }
