@@ -78,7 +78,7 @@ main {
   width: 80%;
   margin: 40px auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
 .part1 {
@@ -88,14 +88,42 @@ main {
 
 .slide_bar {
   position: fixed;
+  background-color: #888888;
+  width: 100%;
   top: 98px;
-  left: 0px;
-  padding: 10px;
-  background-color: #555;
-  height: 100%;
-  width: 64px;
+  padding: 10px 0;
 }
 
-text {
-  
+.slide_bar > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.slide_bar > ul > li > a {
+  border-radius: 50px;
+}
+
+.slide_bar > ul > li > a > img {
+  width: 70px;
+
+}
+
+.text {
+  padding-top: 50px;
+}
+
+.text > h1 {
+  padding: 50px;
+}
+
+.text > h2 {
+  padding-bottom: 24px;
+}
+
+.text > h3 {
+  padding-bottom: 16px;
+}
+
+.text > p {
+  padding: 10px;
 }
