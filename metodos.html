@@ -4,23 +4,57 @@
   <title>Meu Site</title>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+  </head>
 <body>
-  <header>
-    <nav class="principal">
-      <ul>  
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-          <a href="#">Métodos</a>
-          <div class="dropdown-content">
-            <a href="metodos.html">Hormonais</a>
-            <a href="metodos2.html">Não Hormonais</a>
-          </div>
-        </li>
-        <li><a href="quebrandotabu.html">Quebrando Tabu</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav class="principal">
+          <ul>  
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#">Métodos</a>
+              <div class="dropdown-content">
+                <a href="metodos.html">Hormonais</a>
+                <a href="metodos2.html">Não Hormonais</a>
+              </div>
+            </li>
+            <li><a href="quebrandotabu.html">Quebrando Tabu</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="itens" class="nav-mobile">
+        <ul>
+            <li>
+                <a href="#">Anticoncepcional Oral</a>
+            </li>
+            <li>
+                <a href="#">Minipílula</a>
+            </li>
+            <li>
+                <a href="#">Anticoncepcional Injetável</a>
+            </li>
+            <li>
+                <a href="#">Implante Hormonal</a>
+            </li>
+            <li>
+                <a href="#">Adesivo</a>
+            </li>
+            <li>
+                <a href="#">Anel Vaginal</a>
+            </li>
+            <li>
+                <a href="#">Pílula do dia Seguinte</a>
+            </li>
+            <li>
+                <a href="#">DIU Hormonal</a>
+            </li>
+            <li>
+                <a href="#">Esponja Contraceptiva</a>
+            </li>
+            <li>
+              <a href="#">Capuz Cervical</a>
+            </li> 
+          </ul>
+      </div>
   <div class="slide_bar">
     <ul>
       <li>
@@ -56,6 +90,7 @@
     </ul>
 </div>
   <main>
+    <span class="icon" onclick="clickMenu()"><img src="imagens/56763.png" alt="menu"></span>
     <div class="text">
       <p>
         Os métodos para prevenção a gravidez ou chamados de contraceptivos hormonais são métodos que tem em sua
@@ -618,5 +653,15 @@
     </p>
     </div>
   </main>
+  <script>
+    function clickMenu() {
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+        }
+        else {
+            itens.style.display = 'block'
+        }
+    }
+  </script>
 </body>
 </html>
