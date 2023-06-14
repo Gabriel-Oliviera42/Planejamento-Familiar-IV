@@ -21,6 +21,46 @@
           </ul>
         </nav>
       </header>
+      <div id="itens" class="nav-mobile" >
+        <ul>
+            <li>
+                <a href="#">Tabelinha</a>
+            </li>
+            <li>
+                <a href="#">Muco Cervical</a>
+            </li>
+            <li>
+                <a href="#">Temperatura Basal</a>
+            </li>
+            <li>
+                <a href="#">Coito Interrompido</a>
+            </li>
+            <li>
+                <a href="#">Camisinha Feminina</a>
+            </li>
+            <li>
+                <a href="#">Camisinha Masculina</a>
+            </li>
+            <li>
+                <a href="#">Diafragma</a>
+            </li>
+            <li>
+                <a href="#">Espermicida</a>
+            </li>
+            <li>
+                <a href="#">Laqueadura</a>
+            </li>
+            <li>
+              <a href="#">Vasectomia</a>
+            </li> 
+            <li>
+                <a href="#">Amenorreia Lactacional</a>
+            </li> 
+            <li>
+                <a href="#">Diu Cobre</a>
+            </li> 
+          </ul>
+      </div>
   <div class="slide_bar">
     <ul>
       <li>
@@ -62,6 +102,7 @@
     </ul>
 </div>
   <main>
+    <span class="icon" onclick="clickMenu()"><img src="imagens/56763.png" alt="menu"></span>
     <div class="text">
         <p>
             Inclui os métodos comportamentais e de barreira. O método comportamental consiste na percepção de alterações
@@ -782,5 +823,15 @@
           </p>  
     </div>
   </main>
+  <script>
+    function clickMenu() {
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+        }
+        else {
+            itens.style.display = 'block'
+        }
+    }
+  </script>
 </body>
 </html>
